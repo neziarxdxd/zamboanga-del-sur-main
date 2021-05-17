@@ -63,6 +63,10 @@
     text-align:left;
   }
 }
+.mynewclass{
+  height: 1900px;
+  width: 900px;
+}
 </style>
 <body>
 
@@ -79,7 +83,7 @@
     <div class="card" id="bisaya">
       <h2>Bisaya Bisaya Island</h2>
       <h5>Image Source: Nhal Alforque , January 13, 2021</h5>
-      <div class="image-7"></div>
+      <img id="showhide" onclick="myFunction()" src="css/a-1.jpg">
       
       <p>
         Bisaya Bisaya Island also features a long and super white sandy beach with crystal-clear waters. It is one of the most scenic yet off-beaten islands in the province.
@@ -90,7 +94,7 @@
     <div class="card" id="gui">
       <h2>Guipos Cave</h2>
       <h5>Image Source: Nhal Alforque , January 13, 2021</h5>
-      <div class="image-6"></div>
+      <img id="showhide1" onclick="myFunction1()" src="css/b.jpg">
       
       <p>
         Guipos Cave offers a more challenging spelunking experience. Expect to crawl pretty low, clamber your way across narrow tunnels, and wade on pools as you go deeper and explore the sights. But don’t worry. These are nothing once you glimpse of the stalactite and stalagmite rock formations inside.
@@ -142,7 +146,9 @@ It consists of islets and islands which are mostly uninhabited. Here, you’ll f
         <h2>Puting Balas Sandbar</h2>
         <h5>Image Source: Vin Dipay
           , January 13, 2021</h5>
-        <div class="image-3"></div>
+
+          <img id="showhide" onclick="myFunction()" src="css/a-1.jpg">
+        </div>
         
         <p>
           Yes, you’ll find a sandbar in this province. Putting Balas Sandbar is your ultimate getaway for tropical beaches. Similar to Boracay, it also boasts of powdery white sands.
@@ -162,14 +168,15 @@ It consists of islets and islands which are mostly uninhabited. Here, you’ll f
   <div class="author">&copy2021</div>
 </div>
 <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
+  function myFunction() {    
+var NAME = document.getElementById("showhide")
+NAME.className="mynewclass"    
+}
+
+function myFunction1() {    
+var NAME = document.getElementById("showhide1")
+NAME.className="mynewclass"    
+}
   </script>
 </body>
 </html>
